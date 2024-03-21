@@ -1,0 +1,604 @@
+repo_name: brendatamaar/freshly
+report_id: e9f3a759277b14c7a841ea8719c79e60
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-21T07:04:05+00:00'
+requested_by: brendatamaar
+provider: github
+branch: main
+detected_tools_count: 44
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/brendatamaar/freshly
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/brendatamaar/freshly
+  detection_source: Repo Metadata
+- name: PHP
+  description: A popular general-purpose scripting language that is especially suited
+    to web development
+  website_url: http://www.php.net/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly
+  detection_source: Repo Metadata
+- name: Chart.js
+  description: Simple, clean and engaging charts for designers and developers
+  website_url: http://www.chartjs.org/
+  version: 4.3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/3866/_GD1-XrU_400x400.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Guzzle
+  description: PHP HTTP client that makes it easy to send HTTP requests and trivial
+    to integrate with web services
+  website_url: http://guzzlephp.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/2350/638632.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Laravel
+  description: A PHP Framework For Web Artisans
+  website_url: http://laravel.com/
+  version: 10.47.0
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/992/AcA2LnWL_400x400.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 10:31:39.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Vue.js
+  description: A progressive framework for building user interfaces
+  website_url: http://vuejs.org/
+  version: 3.3.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript MVC Frameworks
+  image_url: https://img.stackshare.io/service/3837/paeckCWC.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Vuetify
+  description: Material Component Framework for VueJS 2
+  website_url: https://vuetifyjs.com/
+  version: 3.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/6163/PzNbCwXH.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/brendatamaar/freshly
+  detection_source: Repo Metadata
+- name: PHPUnit
+  description: Testing framework for PHP
+  website_url: https://phpunit.de/
+  version: 10.5.11
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/1616/1_WsEnddd5Y4EgEHsT054kUQ.jpeg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Stylelint
+  description: A mighty, modern CSS linter
+  website_url: http://stylelint.io/
+  version: 14.15.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/5446/V9JsvPul_400x400.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Vite
+  description: Native-ESM powered web dev build tool
+  website_url: https://vitejs.dev/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Pinia
+  description: The Vue Store that you will enjoy using
+  website_url: https://pinia.vuejs.org/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/48301/default_0cffd727391e16b2a8bd6edbcffc0255a3a541d0.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: Prism
+  description: An extensible syntax highlighter, built with modern web standards
+  website_url: https://prismjs.com/
+  version: 1.29.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/10010/Screen_Shot_2012-07-31_at_21.57.03__400x400.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 1.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 20.11.24
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 5.59.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 5.59.6
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: axios-mock-adapter
+  description: Axios adapter that allows to easily mock requests
+  package_url: https://www.npmjs.com/axios-mock-adapter
+  version: 1.21.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17391/default_e9c4b89784d4fe5d59f93b4a54dd8910ea23e5de.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-config-airbnb-base
+  description: Airbnb's base JS ESLint config, following our styleguide
+  package_url: https://www.npmjs.com/eslint-config-airbnb-base
+  version: 15.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15888/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-import-resolver-typescript
+  description: TypeScript .ts .tsx module resolver for `eslint-plugin-import`
+  package_url: https://www.npmjs.com/eslint-import-resolver-typescript
+  version: 3.5.5
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18380/default_d0ba753d47207ad8f04b02befcab81c50f38718f.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-plugin-import
+  description: Import with sanity
+  package_url: https://www.npmjs.com/eslint-plugin-import
+  version: 2.27.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-plugin-promise
+  description: Enforce best practices for JavaScript promises
+  package_url: https://www.npmjs.com/eslint-plugin-promise
+  version: 6.1.1
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15885/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-plugin-unicorn
+  description: Various awesome ESLint rules
+  package_url: https://www.npmjs.com/eslint-plugin-unicorn
+  version: 47.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16871/default_2e3ed47575edcaf407097e6171e3d4cb8681a6b3.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: eslint-plugin-vue
+  description: Official ESLint plugin for Vue.js
+  package_url: https://www.npmjs.com/eslint-plugin-vue
+  version: 9.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15950/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: jwt-decode
+  description: Decode JWT tokens, mostly useful for browser applications
+  package_url: https://www.npmjs.com/jwt-decode
+  version: 3.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17395/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: prismjs
+  description: Lightweight, robust, elegant syntax highlighting
+  package_url: https://www.npmjs.com/prismjs
+  version: 1.29.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16351/default_4cc3f31b8c64a6268fc123f0965a09d1b11180af.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: vite
+  description: Native-ESM powered web dev build tool
+  package_url: https://www.npmjs.com/vite
+  version: 4.3.8
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+  vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 4.5.2
+  - name: Vite Server Options (server.fs.deny) can be bypassed using double forward-slash
+      (//)
+    cve_id: CVE-2023-34092
+    cve_url: https://github.com/advisories/GHSA-353f-5xf4-qw67
+    detected_date: Nov 23
+    severity: high
+    first_patched: 4.3.9
+- name: vue
+  description: Vue
+  package_url: https://www.npmjs.com/vue
+  version: 3.3.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15844/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: vue-i18n
+  description: Internationalization plugin for Vue.js
+  package_url: https://www.npmjs.com/vue-i18n
+  version: 9.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16963/default_ebf16e0c8af5e95030933d9e01479224b6665289.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: vue-router
+  description: Official router for Vue.js 2
+  package_url: https://www.npmjs.com/vue-router
+  version: 4.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15969/default_261820f5687b4c88a3e8f95c71b5e8dccd34c1d7.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: webfontloader
+  description: Web Font Loader gives you added control when using linked fonts via
+    @font-face
+  package_url: https://www.npmjs.com/webfontloader
+  version: 1.6.28
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18680/default_796854034d0fb722b81b1d885cb3ab88a613d5fb.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: guzzlehttp/guzzle
+  description: Guzzle is a PHP HTTP client library
+  package_url: https://packagist.org/guzzlehttp/guzzle
+  version: 7.8.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: laravel/framework
+  description: The Laravel Framework
+  package_url: https://packagist.org/laravel/framework
+  version: 10.47.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 10:31:39.000000000 Z
+- name: laravel/tinker
+  description: Powerful REPL for the Laravel framework
+  package_url: https://packagist.org/laravel/tinker
+  version: 2.9.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 10:31:39.000000000 Z
+- name: mockery/mockery
+  description: Mockery is a simple yet flexible PHP mock object framework
+  package_url: https://packagist.org/mockery/mockery
+  version: 1.6.7
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: nunomaduro/collision
+  description: Cli error handling for console/command-line PHP applications
+  package_url: https://packagist.org/nunomaduro/collision
+  version: 7.10.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
+- name: phpunit/phpunit
+  description: The PHP Unit Testing framework
+  package_url: https://packagist.org/phpunit/phpunit
+  version: 10.5.11
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/brendatamaar/freshly/blob/main/composer.lock
+  detection_source: composer.json
+  last_updated_by: brendatamaar
+  last_updated_on: 2024-03-06 09:47:07.000000000 Z
