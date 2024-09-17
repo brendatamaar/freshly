@@ -1,6 +1,8 @@
 import {
   AlertTriangle,
   ArrowRight,
+  BookImage,
+  ChartSpline,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -28,7 +30,9 @@ import {
   User,
   User2Icon,
   UserX2Icon,
-  X
+  X,
+  WashingMachine,
+  Warehouse
 } from 'lucide-react';
 
 export type Icon = LucideIcon;
@@ -60,6 +64,10 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   laptop: Laptop,
+  laundry: WashingMachine,
+  inventory: Warehouse,
+  catalog: BookImage,
+  report: ChartSpline,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
