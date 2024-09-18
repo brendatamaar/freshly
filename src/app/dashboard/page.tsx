@@ -4,6 +4,10 @@ import { PieGraph } from '@/components/charts/pie-graph';
 import { CalendarDateRangePicker } from '@/components/date-range-picker';
 import PageContainer from '@/components/layout/page-container';
 import { RecentSales } from '@/components/recent-sales';
+import { ActiveOrders } from '@/components/dashboard/active-orders';
+import { DataRevenue } from '@/components/dashboard/data-revenue';
+import { DataOrder } from '@/components/dashboard/data-order';
+import { DataStock } from '@/components/dashboard/data-stock';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -13,6 +17,7 @@ import {
     CardTitle
 } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { ArrowUpRight } from "lucide-react"
 
 export default function page() {
     return (
@@ -24,7 +29,7 @@ export default function page() {
                     </h2>
                     <div className="hidden items-center space-x-2 md:flex">
                         <CalendarDateRangePicker />
-                        <Button>Download</Button>
+                        <Button>Search</Button>
                     </div>
                 </div>
                 <Tabs defaultValue="overview" className="space-y-4">
@@ -64,7 +69,7 @@ export default function page() {
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium">
-                                        Subscriptions
+                                        Total Customer
                                     </CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +95,7 @@ export default function page() {
                             </Card>
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                                    <CardTitle className="text-sm font-medium">Sales</CardTitle>
+                                    <CardTitle className="text-sm font-medium">Total Order</CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -115,7 +120,7 @@ export default function page() {
                             <Card>
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium">
-                                        Active Now
+                                        Active Orders
                                     </CardTitle>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -138,26 +143,32 @@ export default function page() {
                                 </CardContent>
                             </Card>
                         </div>
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-8">
                             <div className="col-span-4">
-                                <BarGraph />
+                                <DataRevenue />
                             </div>
-                            <Card className="col-span-4 md:col-span-3">
-                                <CardHeader>
-                                    <CardTitle>Recent Sales</CardTitle>
-                                    <CardDescription>
-                                        You made 265 sales this month.
-                                    </CardDescription>
+                            <Card className="col-span-4">
+                                <CardHeader className="flex flex-row items-center">
+                                    <div className="grid gap-2">
+                                        <CardTitle>Active Order</CardTitle>
+                                        <CardDescription>
+                                            You have 10 active orders.
+                                        </CardDescription>
+                                    </div>
+                                    <Button size="sm" variant="outline" className="ml-auto gap-1">
+                                        View All
+                                        <ArrowUpRight className="h-4 w-4" />
+                                    </Button>
                                 </CardHeader>
                                 <CardContent>
-                                    <RecentSales />
+                                    <ActiveOrders />
                                 </CardContent>
                             </Card>
                             <div className="col-span-4">
-                                <AreaGraph />
+                                <DataOrder />
                             </div>
-                            <div className="col-span-4 md:col-span-3">
-                                <PieGraph />
+                            <div className="col-span-4">
+                                <DataStock />
                             </div>
                         </div>
                     </TabsContent>
