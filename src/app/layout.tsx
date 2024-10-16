@@ -1,5 +1,5 @@
-import Providers from '@/components/layout/providers';
 import { Toaster } from '@/components/ui/toaster';
+import Providers from '@/components/layout/provider';
 import type { Metadata } from 'next';
 import NextTopLoader from 'nextjs-toploader';
 import { Inter } from 'next/font/google';

@@ -1,64 +1,79 @@
-'use client';
-import React, { useState } from 'react';
-import { DashboardNav } from '@/components/dashboard-nav';
-import { navItems } from '@/constants/data';
-import { cn } from '@/lib/utils';
-import { ChevronLeft } from 'lucide-react';
-import { useSidebar } from '@/hooks/useSidebar';
-import Link from 'next/link';
+import { Fragment } from "react";
+import Link from "next/link";
 
-type SidebarProps = {
-  className?: string;
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { page_routes } from "@/lib/routes";
+import Anchor from "./anchor";
+import Logo from "./logo";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import Icon from "./icon";
+import { ChevronDown, LockIcon } from "lucide-react";
+import { Badge } from "../ui/badge";
+
+type SidebarNavLinkProps = {
+    item: {
+        title: string;
+        href: string;
+        icon?: string;
+        isComing?: boolean;
+    };
 };
 
-export default function Sidebar({ className }: SidebarProps) {
-  const { isMinimized, toggle } = useSidebar();
+export const SidebarNavLink: React.FC<SidebarNavLinkProps> = ({ item }: SidebarNavLinkProps) => {
+    return (
+        <Anchor
+            href={item.href}
+            key={item.title + item.href}
+            activeClassName="!bg-primary text-primary-foreground">
+            {item.icon && <Icon name={item.icon} className="h-4 w-4" />}
+            {item.title}
+            {item.isComing && (
+                <Badge className="ms-auto opacity-50" variant="outline">
+                    Coming
+                </Badge>
+            )}
+        </Anchor>
+    );
+};
 
-  const handleToggle = () => {
-    toggle();
-  };
-
-  return (
-    <aside
-      className={cn(
-        `relative  hidden h-screen flex-none border-r bg-card transition-[width] duration-500 md:block`,
-        !isMinimized ? 'w-72' : 'w-[72px]',
-        className
-      )}
-    >
-      <div className="hidden p-5 pt-10 lg:block">
-        <Link
-          href={'https://github.com/Kiranism/next-shadcn-dashboard-starter'}
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="mr-2 h-6 w-6"
-          >
-            <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
-          </svg>
-        </Link>
-      </div>
-      <ChevronLeft
-        className={cn(
-          'absolute -right-3 top-10 z-50  cursor-pointer rounded-full border bg-background text-3xl text-foreground',
-          isMinimized && 'rotate-180'
-        )}
-        onClick={handleToggle}
-      />
-      <div className="space-y-4 py-4">
-        <div className="px-3 py-2">
-          <div className="mt-3 space-y-1">
-            <DashboardNav items={navItems} />
-          </div>
-        </div>
-      </div>
-    </aside>
-  );
+export default function Sidebar() {
+    return (
+        <div className="fixed hidden h-screen lg:block">
+            <ScrollArea className="h-full w-[--sidebar-width] border-r bg-background px-4 py-2">
+                <Logo />
+                {page_routes.map((route) => (
+                    <div key={route.title}>
+                        <div className="px-2 py-4 font-medium">{route.title}</div>
+                        {route.items.map((item, key) => {
+                            return (
+                                <div className="*:flex *:items-center *:gap-3 *:rounded-lg *:px-3 *:py-2 *:transition-all hover:*:bg-muted" key={item.title}>
+                                    {item.items?.length ? (
+                                        <Collapsible className="group !block transition-all hover:data-[state=open]:bg-transparent">
+                                            <CollapsibleTrigger className="flex w-full items-center gap-3">
+                                                {item.icon && <Icon name={item.icon} className="h-4 w-4" />}
+                                                {item.title}
+                                                <ChevronDown className="ms-auto h-4 w-4 transition-transform group-data-[state=closed]:rotate-90" />
+                                            </CollapsibleTrigger>
+                                            <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+                                                <div className="py-2 *:flex *:items-center *:gap-3 *:rounded-lg *:px-7 *:py-2 *:transition-all hover:*:bg-muted">
+                                                    {item.items.map((item, key) => (
+                                                        <SidebarNavLink key={key} item={item} />
+                                                    ))}
+                                                </div>
+                                            </CollapsibleContent>
+                                        </Collapsible>
+                                    ) : (
+                                        <SidebarNavLink key={key} item={item} />
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
+                ))
+                }
+            </ScrollArea >
+        </div >
+    );
 }

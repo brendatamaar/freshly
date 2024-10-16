@@ -1,6 +1,7 @@
 import Header from '@/components/layout/header';
 import Sidebar from '@/components/layout/sidebar';
 import type { Metadata } from 'next';
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
     title: 'Freshly Dashboard',
@@ -13,12 +14,12 @@ export default function DashboardLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="flex">
+        <div className="flex h-screen">
             <Sidebar />
-            <main className="w-full flex-1 overflow-hidden">
+            <div className="w-full lg:ps-[--sidebar-width]">
                 <Header />
-                {children}
-            </main>
+                <main className={cn("min-h-full p-4")}>{children}</main>
+            </div>
         </div>
     );
 }
